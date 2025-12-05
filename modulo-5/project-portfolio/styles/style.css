@@ -27,11 +27,22 @@
   interpolate-size: allow-keywords;
 }
 
+body.dark {
+  --primary: #66bbff;
+  --primary-light: #9ad0fc;
+  --background: #111;
+  --background-inverse: #222;
+  --foreground: #e0e0e0;
+  --foreground-inverse: #333;
+  --card: #2c2c2c;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--background);
   color: var(--foreground);
+  transition: background-color 0.2s, color 0.2s;
 }
 
 header {
@@ -334,6 +345,7 @@ article#video .video-container {
     top: 62px;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-bottom: 1.25rem;
   }
 
   section#sheet h1 {
